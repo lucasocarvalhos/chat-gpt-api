@@ -7,7 +7,6 @@ app = Flask(__name__)
 CORS(app)
 
 def myChat(api_key, prompt):
-    #openai.api_key = "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"
     openai.api_key = api_key
 
     response = openai.Completion.create(
